@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\features.html" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\login.html" />
+    <Content Remove="wwwroot\login.js" />
+    <Content Remove="wwwroot\register.html" />
+    <Content Remove="wwwroot\register.js" />
+    <Content Remove="wwwroot\script.js" />
+    <Content Remove="wwwroot\styles.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\features.html" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\login.html" />
+    <None Include="wwwroot\login.js" />
+    <None Include="wwwroot\register.html" />
+    <None Include="wwwroot\register.js" />
+    <None Include="wwwroot\script.js" />
+    <None Include="wwwroot\styles.css" />
+  </ItemGroup>
+
+</Project>
